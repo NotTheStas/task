@@ -1,0 +1,7 @@
+<h2>Личный кабинет</h2>
+<p>Ваш никнейм: {{ username }}</p>
+
+<a href="{% url 'change_username' %}">Сменить никнейм</a><br>
+<a href="{% url 'change_password' %}">Сменить пароль</a><br>
+<a href="{% url 'delete_account' %}">Удалить аккаунт</a><br>
+<a href="{% url 'logout' %}">Выйти</a>

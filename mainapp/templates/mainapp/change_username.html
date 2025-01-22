@@ -1,0 +1,9 @@
+<h2>Смена имени пользователя</h2>
+<form method="POST" action="">
+    {% csrf_token %}
+    <label for="new_username">Новое имя пользователя:</label>
+    <input type="text" id="new_username" name="new_username" required><br>
+    <button type="submit">Изменить имя пользователя</button>
+</form>
+
+<a href="{% url 'profile' %}">Назад в личный кабинет</a>

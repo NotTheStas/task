@@ -1,0 +1,9 @@
+<h2>Удаление аккаунта</h2>
+<p>Вы уверены, что хотите удалить ваш аккаунт? Это действие необратимо.</p>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <button type="submit">Удалить аккаунт</button>
+</form>
+
+<a href="{% url 'profile' %}">Отмена</a>
